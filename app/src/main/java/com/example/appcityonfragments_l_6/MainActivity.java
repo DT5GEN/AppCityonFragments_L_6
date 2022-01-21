@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.coat_of_arms, CoatOfArmsFragment.newInstance())
+                    .replace(R.id.coat_of_arms, CoatOfArmsFragment.newInstance(new City(0, "test")))
                     .commit();
         }
     }
