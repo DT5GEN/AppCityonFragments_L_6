@@ -4,11 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
   <FrameLayout
       android:id="@+id/cities"
-      android:layout_width="match_parent"
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_height="match_parent"/>
+
+ <FrameLayout
+      android:id="@+id/coat_of_arms"
+     android:layout_width="0dp"
+     android:layout_weight="1"
       android:layout_height="match_parent"/>
 
 </LinearLayout>
