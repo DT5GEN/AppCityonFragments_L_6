@@ -16,13 +16,13 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.cities, CitiesFragment.newInstance())
+                .replace(R.id.cities_container, CitiesFragment.newInstance())
                 .commit();
 
         if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.coat_of_arms, CoatOfArmsFragment.newInstance(new City(0, "test")))
+                    .replace(R.id.coat_of_arms_container, CoatOfArmsFragment.newInstance(new City(2, "test")))
                     .commit();
         }
     }
